@@ -19,12 +19,12 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-slate-900 text-slate-400 border-t-4 border-primary pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-slate-900 text-slate-400 border-t-4 border-primary pt-12 pb-6 relative overflow-hidden">
       {/* Subtle grid background for footer */}
       <div className="absolute inset-0 opacity-[0.02] energy-grid pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
           {/* Column 1: Company Profile */}
           <div className="space-y-4">
             <Link to="/" className="group inline-block">
@@ -100,45 +100,10 @@ export default function Footer() {
               <li className="flex gap-2.5 items-center">
                 <Mail size={16} className="text-primary-light shrink-0" />
                 <div className="flex flex-col">
-                  <a href="mailto:sales@sahasranam.in" className="hover:text-white transition-colors">sales@sahasranam.in</a>
-                  <a href="mailto:sahasranamenergy@gmail.com" className="hover:text-white transition-colors text-[10px]">sahasranamenergy@gmail.com</a>
+                  <a href="mailto:sachin.jain@sahasranam.com" className="hover:text-white transition-colors">sachin.jain@sahasranam.com</a>
                 </div>
               </li>
             </ul>
-          </div>
-
-          {/* Column 4: Newsletter */}
-          <div>
-            <h4 className="text-white text-sm font-extrabold uppercase tracking-wider mb-5">
-              Newsletter Subscription
-            </h4>
-            <p className="text-xs text-slate-400 mb-4 leading-relaxed">
-              Subscribe to our monthly brief detailing energy infrastructure trends, safety compliance standards, and renewable technology insights.
-            </p>
-            {subscribed ? (
-              <div className="flex items-center gap-2 text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-900/50 rounded-lg p-3">
-                <CheckCircle2 size={16} className="shrink-0" />
-                <span>Subscription Confirmed! Thank you.</span>
-              </div>
-            ) : (
-              <form onSubmit={handleSubscribe} className="flex gap-2">
-                <input
-                  type="email"
-                  placeholder="Corporate Email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="bg-slate-800 border border-slate-700 text-white rounded-lg px-3 py-2 text-xs outline-none focus:border-primary-light w-full transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="bg-primary hover:bg-primary-light text-white px-3 py-2 rounded-lg transition-colors flex items-center justify-center shrink-0"
-                  aria-label="Subscribe"
-                >
-                  <ArrowRight size={16} />
-                </button>
-              </form>
-            )}
           </div>
         </div>
 
@@ -172,10 +137,10 @@ export default function Footer() {
             © {new Date().getFullYear()} Sri Sahasranam Energy Private Limited. All Rights Reserved.
           </span>
           <div className="flex gap-4">
-            <Link to="/terms" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-slate-400 transition-colors">Terms of Use</Link>
-            <Link to="/terms" className="hover:text-slate-400 transition-colors">Cookies Settings</Link>
-            <Link to="/terms" className="hover:text-slate-400 transition-colors">Compliance Ethics</Link>
+            <Link to="/terms" state={{ tab: 'privacy' }} className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
+            <Link to="/terms" state={{ tab: 'terms' }} className="hover:text-slate-400 transition-colors">Terms of Use</Link>
+            <Link to="/terms" state={{ tab: 'cookies' }} className="hover:text-slate-400 transition-colors">Cookies Settings</Link>
+            <Link to="/terms" state={{ tab: 'ethics' }} className="hover:text-slate-400 transition-colors">Compliance Ethics</Link>
           </div>
         </div>
       </div>

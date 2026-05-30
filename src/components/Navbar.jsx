@@ -75,13 +75,15 @@ export default function Navbar() {
           {/* Action CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <Magnetic>
-              <Link
-                to="/contact"
+            <a
+                href="https://wa.me/917428306467?text=Hello%20Sri%20Sahasranam%20Energy%2C%20I%20would%20like%20to%20consult%20with%20an%20engineering%20expert."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-5 py-2.5 bg-primary hover:bg-primary-light text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md hover:shadow-lg flex items-center gap-2 border-glow light-sweep transition-all duration-300"
               >
                 Talk To Experts
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </Magnetic>
           </div>
 
@@ -122,13 +124,15 @@ export default function Navbar() {
           </div>
 
           <div className="pt-6 flex flex-col gap-4 mt-auto">
-            <Link
-              to="/contact"
+            <a
+              href="https://wa.me/917428306467?text=Hello%20Sri%20Sahasranam%20Energy%2C%20I%20would%20like%20to%20consult%20with%20an%20engineering%20expert."
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full text-center py-3 bg-primary hover:bg-primary-light text-white font-bold uppercase tracking-wider rounded-lg shadow-md flex items-center justify-center gap-2"
             >
               Talk To Experts
               <ArrowRight size={16} />
-            </Link>
+            </a>
             
             <div className="flex items-center justify-center gap-2 text-xs text-slate-500 font-semibold bg-slate-50 border border-slate-100 rounded-lg p-3 mt-4">
               <ShieldCheck size={16} className="text-primary" />

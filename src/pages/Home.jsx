@@ -11,6 +11,8 @@ import ThreeHeroCanvas from '../components/ThreeHeroCanvas';
 import NetworkDiagram from '../components/NetworkDiagram';
 import Magnetic from '../components/Magnetic';
 import TiltCard from '../components/TiltCard';
+import FAQ from '../components/FAQ';
+import CTACard from '../components/CTACard';
 
 // Framer motion variants
 const fadeUp = {
@@ -103,12 +105,14 @@ export default function Home() {
                 </Link>
               </Magnetic>
               <Magnetic>
-                <Link 
-                  to="/contact" 
+                <a 
+                  href="https://wa.me/917428306467?text=Hello%20Sri%20Sahasranam%20Energy%2C%20I%20would%20like%20to%20consult%20with%20an%20engineering%20expert."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-3.5 bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold uppercase tracking-wider text-xs rounded-lg shadow-sm hover:shadow transition-all duration-300"
                 >
                   Talk To Experts
-                </Link>
+                </a>
               </Magnetic>
             </motion.div>
           </div>
@@ -647,132 +651,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. FEATURED PROJECTS */}
-      <section className="py-24 bg-transparent relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
-            <div className="space-y-3 text-left">
-              <span className="text-sm font-bold tracking-widest text-primary uppercase">Track Record</span>
-              <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900">
-                Featured Portfolios
-              </h2>
-              <div className="w-20 h-1 bg-primary rounded-full" />
-            </div>
-            <Link 
-              to="/projects" 
-              className="text-primary font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 hover:text-primary-light transition-colors"
-            >
-              <span>View All Projects</span>
-              <ArrowRight size={14} />
-            </Link>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Al-Muwaih ISP BESS Plant',
-                client: 'Tractebel (KSA)',
-                capacity: '500MW / 2000MWh',
-                sector: 'BESS Solutions',
-                tech: 'Greenfield Lithium BESS, 4Hr Storage Depth',
-                status: 'FEED Phase Complete',
-                img: '/pdf_images/img_9_2.jpeg'
-              },
-              {
-                title: 'Hadar ISP BESS Plant',
-                client: 'Tractebel (KSA)',
-                capacity: '500MW / 2000MWh',
-                sector: 'BESS Solutions',
-                tech: 'Greenfield Lithium BESS, 4Hr Storage Depth',
-                status: 'FEED Phase Complete',
-                img: '/pdf_images/img_9_2.jpeg'
-              },
-              {
-                title: 'WeiBenthum-kettig BESS',
-                client: 'Tractebel (Germany)',
-                capacity: '50MW / 100MWh',
-                sector: 'BESS Solutions',
-                tech: 'Greenfield BESS, 2Hr Storage',
-                status: 'FEED Complete',
-                img: '/pdf_images/img_9_2.jpeg'
-              },
-              {
-                title: 'Amazon Data Centre Substation',
-                client: 'Tractebel (Mumbai)',
-                capacity: '400/220KV HV Substation',
-                sector: 'Grid Electrification',
-                tech: 'Tender engineering support for redundant links',
-                status: 'Tender Support Completed',
-                img: '/pdf_images/img_8_2.jpeg'
-              },
-              {
-                title: 'HSIIDC Global City Gurugram',
-                client: 'Vardhan (India)',
-                capacity: '33KV Substations (3 Nos.)',
-                sector: 'Electrical EPC',
-                tech: '38 HT panels, 40Km cabling, SCADA grid setup',
-                status: 'Erection & Testing Complete',
-                img: '/pdf_images/img_8_2.jpeg'
-              },
-              {
-                title: 'Amperex Technology Ltd (ATL)',
-                client: 'Vardhan (Gurugram)',
-                capacity: 'MEP & Industrial Erection',
-                sector: 'Smart Building Infrastructure',
-                tech: 'Factory cabling, panel installations, and wiring',
-                status: 'Erection Phase Complete',
-                img: '/pdf_images/img_4_13.jpeg'
-              }
-            ].map((p, index) => (
-              <motion.div
-                key={p.title}
-                initial={{ opacity: 0, scale: 0.98 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="bg-white/70 border border-slate-100 rounded-2xl overflow-hidden hover:bg-white hover:shadow-lg hover:border-teal-200/50 transition-all duration-300 flex flex-col justify-between border-glow relative group shadow-sm"
-              >
-                {/* Project Image Header */}
-                <div className="w-full h-40 overflow-hidden relative border-b border-slate-100 bg-slate-100">
-                  <img 
-                    src={p.img} 
-                    alt={p.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent" />
-                </div>
-                
-                <div className="p-6 space-y-4 flex-grow flex flex-col justify-between">
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-start gap-2">
-                      <span className="text-[9px] font-bold text-primary uppercase tracking-wider px-2 py-0.5 bg-teal-50 rounded">
-                        {p.sector}
-                      </span>
-                      <span className="text-[9px] font-semibold text-slate-500 uppercase tracking-widest">
-                        {p.status}
-                      </span>
-                    </div>
-                    <div>
-                      <h3 className="text-base font-extrabold text-slate-800 leading-snug group-hover:text-primary transition-colors">{p.title}</h3>
-                      <p className="text-[10px] text-slate-500 mt-1">Client: <strong>{p.client}</strong></p>
-                    </div>
-                    <div className="space-y-1.5 pt-2 border-t border-slate-100 text-xs">
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">Capacity:</span>
-                        <span className="font-semibold text-slate-700">{p.capacity}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">Technology:</span>
-                        <span className="font-semibold text-slate-700 text-right max-w-[170px] truncate">{p.tech}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* 10. MANAGEMENT TEAM */}
       <section className="py-24 bg-gradient-to-b from-slate-100/50 to-slate-50/20 border-t border-b border-slate-200/40">
@@ -860,29 +739,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 12. CTA / LEAD PROMPT */}
-      <section className="py-20 bg-slate-100/10 relative overflow-hidden border-t border-slate-200/40">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
-          <span className="text-xs font-bold tracking-widest text-primary uppercase bg-teal-50 border border-teal-100 px-3 py-1.5 rounded-full inline-block">
-            Start Collaboration
-          </span>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            Ready to Advance Your Energy Infrastructure?
-          </h2>
-          <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-            Consult with our senior electrical designers, BESS sizing specialists, and project coordinators. Build your smart building, substation, or green grid on solid expertise.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 pt-4">
-            <Link 
-              to="/contact" 
-              className="px-8 py-4 bg-primary hover:bg-primary-light text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md hover:shadow-lg flex items-center gap-2 border-glow light-sweep transition-all duration-300 animate-pulse"
-            >
-              Contact Our Engineers
-              <ArrowRight size={14} />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* 12. FAQ & CTA */}
+      <FAQ />
+      <CTACard />
 
     </div>
   );

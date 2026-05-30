@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Building2, Zap, Leaf, Truck, HelpCircle, ShieldCheck, Cpu, X, CheckCircle, ArrowRight 
 } from 'lucide-react';
+import FAQ from '../components/FAQ';
+import CTACard from '../components/CTACard';
 
 const SERVICES_DATA = [
   {
@@ -272,6 +274,9 @@ export default function Services() {
           </div>
         )}
       </AnimatePresence>
+
+      <FAQ />
+      <CTACard />
 
     </div>
   );

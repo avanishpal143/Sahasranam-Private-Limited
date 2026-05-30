@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   X, ZoomIn, Eye, Map, Award, BookOpen, Layers, ShieldCheck, Filter 
 } from 'lucide-react';
+import FAQ from '../components/FAQ';
+import CTACard from '../components/CTACard';
 
 const FILTER_CATEGORIES = [
   { id: 'all', label: 'All Items' },
@@ -441,6 +443,9 @@ export default function Gallery() {
           </div>
         )}
       </AnimatePresence>
+
+      <FAQ />
+      <CTACard />
 
     </div>
   );

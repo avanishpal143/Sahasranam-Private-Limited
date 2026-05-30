@@ -4,6 +4,8 @@ import {
   Database, Battery, Wind, Sun, Settings, ShieldCheck, MapPin, Layers 
 } from 'lucide-react';
 import TiltCard from '../components/TiltCard';
+import FAQ from '../components/FAQ';
+import CTACard from '../components/CTACard';
 
 const FILTER_CATEGORIES = [
   { id: 'all', label: 'All Projects' },
@@ -275,7 +277,10 @@ export default function Projects() {
           </div>
         )}
       </section>
-      
+
+      <FAQ />
+      <CTACard />
+
     </div>
   );
 }

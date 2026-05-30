@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { 
   ShieldCheck, Target, Eye, Compass, Award, Users, HardHat, FileText, Calendar 
 } from 'lucide-react';
+import FAQ from '../components/FAQ';
+import CTACard from '../components/CTACard';
 
 const TEAM_MEMBERS = [
   { name: 'Geeta Jain', qual: 'Graduate', exp: '41+ Years', role: 'Director', desc: 'Oversees organizational direction, compliance, audit systems, and statutory business operations.' },
@@ -344,6 +346,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <FAQ />
+      <CTACard />
 
     </div>
   );

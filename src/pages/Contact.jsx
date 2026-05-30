@@ -4,6 +4,8 @@ import confetti from 'canvas-confetti';
 import { 
   Phone, Mail, MapPin, Building, ShieldCheck, CheckCircle2, Send, Clock, Layers 
 } from 'lucide-react';
+import FAQ from '../components/FAQ';
+import CTACard from '../components/CTACard';
 
 const PROJECT_TYPES = [
   'Battery Energy Storage (BESS)',
@@ -149,8 +151,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-bold text-slate-800 text-sm">Official Email Channels</h4>
                   <div className="mt-1 flex flex-col gap-1 text-slate-500 font-medium">
-                    <a href="mailto:sales@sahasranam.in" className="hover:text-primary transition-colors">sales@sahasranam.in</a>
-                    <a href="mailto:sahasranamenergy@gmail.com" className="hover:text-primary transition-colors text-[10px]">sahasranamenergy@gmail.com</a>
+                    <a href="mailto:sachin.jain@sahasranam.com" className="hover:text-primary transition-colors">sachin.jain@sahasranam.com</a>
                   </div>
                 </div>
               </li>
@@ -260,7 +261,7 @@ export default function Contact() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          placeholder="e.g. sachin.jain@sahasranam.in"
+                          placeholder="e.g. sachin.jain@sahasranam.com"
                           className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-xs text-slate-800 outline-none focus:border-primary focus:bg-white transition-colors"
                         />
                       </div>
@@ -396,11 +397,13 @@ export default function Contact() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
           </div>
-
         </div>
-      </section>
+      </div>
+    </section>
+
+      <FAQ />
+      <CTACard />
       
     </div>
   );

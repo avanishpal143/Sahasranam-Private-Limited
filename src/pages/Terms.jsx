@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { ShieldCheck, Scale, FileText, CheckSquare, Briefcase } from 'lucide-react';
 
 const TABS = [
@@ -10,7 +11,14 @@ const TABS = [
 ];
 
 export default function Terms() {
+  const location = useLocation();
   const [activeTab, setActiveTab] = useState('privacy');
+
+  useEffect(() => {
+    if (location.state && location.state.tab) {
+      setActiveTab(location.state.tab);
+    }
+  }, [location.state]);
 
   return (
     <div className="w-full pt-24 bg-white min-h-screen relative">
