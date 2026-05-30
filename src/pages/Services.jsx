@@ -37,14 +37,15 @@ const SERVICES_DATA = [
   },
   {
     id: 'renewables',
-    title: 'Renewable Energy & BESS',
+    title: 'Renewable Energy & BESS (BESS | Solar | Wind | CBG)',
     icon: Leaf,
-    short: 'Utility-scale Battery Energy Storage Systems (BESS) sizing, load shifting, peak shaving, solar utility, and wind farm design.',
+    short: 'Utility-scale Battery Energy Storage Systems (BESS) sizing, solar farm layouts, wind resource modeling, and Compressed Bio-Gas (CBG) installations.',
     bullets: [
       'BESS load analysis & sizing to determine optimum container battery sizing for peak shaving and load shifting.',
       'Greenfield BESS engineering with 4-hour storage depth parameters (proven 500MW Saudi Arabia FEED capability).',
       'Solar farm site feasibility, soil analysis, structure shadow simulation, and detailed cabling layouts.',
       'Wind turbine suitability studies, foundation civil load designs, access roads, and grid synchronization analyses.',
+      'Compressed Bio-Gas (CBG) project engineering support, process flow, and utility connections.',
       'Detailed pre-bid calculations, yield estimation models, and grid stability reports.'
     ],
     codes: 'IEC 62933 (BESS Systems), IEC 61727 (PV Utility Interfaces), IEEE 1547 (Interconnection Standards).',

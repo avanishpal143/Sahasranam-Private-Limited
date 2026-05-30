@@ -302,7 +302,7 @@ export default function Home() {
               { title: 'Commercial Buildings', icon: Building2, desc: 'Integrated MEP, smart HVAC ducting, and automated building management systems (IBMS).', bg: 'bg-amber-50/50' },
               { title: 'Industrial Plants', icon: Factory, desc: 'Heavy-duty power distribution systems, motor control centers (MCC), cabling, and plant lighting.', bg: 'bg-blue-50/50' },
               { title: 'Utilities', icon: Settings, desc: 'Design engineering for transmission lines, EHV substations (up to 400KV), and grid sync structures.', bg: 'bg-purple-50/50' },
-              { title: 'Renewable Energy', icon: Leaf, desc: 'Utility BESS integration (500MW scale), solar farm layouts, and wind farm bidding grid studies.', bg: 'bg-emerald-50/50' },
+              { title: 'Renewable Energy (BESS/Solar/Wind/CBG)', icon: Leaf, desc: 'Utility BESS integration (500MW scale), solar/wind layouts, and Compressed Bio-Gas (CBG) engineering feeds.', bg: 'bg-emerald-50/50' },
               { title: 'Smart Infrastructure', icon: Cpu, desc: 'Surveillance control centers, IoT sensor integrations, and stadium high-mast lighting projects.', bg: 'bg-sky-50/50' }
              ].map((ind, i) => {
               const Icon = ind.icon;
@@ -468,10 +468,10 @@ export default function Home() {
                 Green Grid Technologies
               </span>
               <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
-                Renewable Energy & BESS Excellence
+                Renewable Energy & BESS (BESS | Solar | Wind | CBG)
               </h2>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Specialized in the integration of Battery Energy Storage Systems (BESS), utility solar farms, and wind installations. We ensure stable grid connectivity, power load shifting, frequency regulation, and voltage support.
+                Specialized in the integration of Battery Energy Storage Systems (BESS), utility solar farms, wind installations, and Compressed Bio-Gas (CBG) projects. We ensure stable grid connectivity, power load shifting, frequency regulation, and voltage support.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
@@ -502,6 +502,13 @@ export default function Home() {
                     Wind & Solar Farm PMC
                   </h3>
                   <p className="text-xs text-slate-400">Resource studies, geotechnical site evaluations, and grid compliance reports.</p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-bold text-white flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary-light rounded-full" />
+                    CBG Plants Integration
+                  </h3>
+                  <p className="text-xs text-slate-400">Process design layout, feed engineering, and Compressed Bio-Gas utility connections.</p>
                 </div>
               </div>
             </div>

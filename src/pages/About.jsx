@@ -56,7 +56,7 @@ export default function About() {
                 Sri Sahasranam Energy Private Limited is a premier Design & Project Management Consultant and small-scale EPC contractor in India. Providing expert, independent advice and technical assistance to our clients across all project phases—from fundamental studies to the operation of complex utilities—is the foundation of our success.
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
-                We have specialization in comprehensive design and engineering services to ensure the optimal performance, efficiency, and bankability of solar, wind, and Battery Energy Storage System (BESS) projects. Our clients can be confident that we will develop a sound basis for decision-making and will assist them in all aspects of their projects up to successful conclusion.
+                We have specialization in comprehensive design and engineering services to ensure the optimal performance, efficiency, and bankability of solar, wind, Battery Energy Storage System (BESS), and Compressed Bio-Gas (CBG) projects. Our clients can be confident that we will develop a sound basis for decision-making and will assist them in all aspects of their projects up to successful conclusion.
               </p>
             </div>
             
