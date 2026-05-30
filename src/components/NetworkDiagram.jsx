@@ -44,12 +44,12 @@ export default function NetworkDiagram() {
             {/* Definitions for gradients and drop shadows */}
             <defs>
               <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#14B8A6" />
-                <stop offset="100%" stop-color="#0F766E" />
+                <stop offset="0%" stopColor="#14B8A6" />
+                <stop offset="100%" stopColor="#0F766E" />
               </linearGradient>
               <linearGradient id="activeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#FBBF24" />
-                <stop offset="100%" stop-color="#F59E0B" />
+                <stop offset="0%" stopColor="#FBBF24" />
+                <stop offset="100%" stopColor="#F59E0B" />
               </linearGradient>
               <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
                 <feGaussianBlur stdDeviation="3" result="blur" />
