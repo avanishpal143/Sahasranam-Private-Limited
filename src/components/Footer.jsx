@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { 
   Mail, Phone, MapPin, ShieldCheck, ArrowRight, CheckCircle2 
 } from 'lucide-react';
-import logo from '../assets/logo.svg';
+import Logo from './Logo';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -27,16 +27,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Column 1: Company Profile */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-3">
-              <img src={logo} alt="Sahasranam Energy" className="w-10 h-10 brightness-0 invert" />
-              <div className="flex flex-col">
-                <span className="text-sm font-extrabold tracking-wider text-white uppercase leading-none">
-                  Sri Sahasranam Energy
-                </span>
-                <span className="text-[9px] font-semibold text-primary-light uppercase tracking-widest mt-1">
-                  Private Limited
-                </span>
-              </div>
+            <Link to="/" className="group inline-block">
+              <Logo lightBg={false} suffixText="Energy" subText="Private Limited" />
             </Link>
             <p className="text-xs text-slate-400 leading-relaxed pt-2">
               Integrated Design & Project Management Consultants and small-scale EPC contractor. Advancing industrial safety & sustainability across smart building infrastructure, grid electrification, and renewable energy storage.

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ArrowRight, ShieldCheck } from 'lucide-react';
-import logo from '../assets/logo.svg';
+import Logo from './Logo';
 import Magnetic from './Magnetic';
 
 const NAV_LINKS = [
@@ -44,20 +44,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo Brand */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <img 
-              src={logo} 
-              alt="Sahasranam Energy" 
-              className="w-10 h-10 group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="flex flex-col">
-              <span className="text-sm font-extrabold tracking-wider text-slate-800 uppercase leading-none">
-                Sri Sahasranam Energy
-              </span>
-              <span className="text-[9px] font-semibold text-primary uppercase tracking-widest mt-1">
-                Industrial Safety & Sustainability
-              </span>
-            </div>
+          <Link to="/" className="group">
+            <Logo lightBg={true} />
           </Link>
 
           {/* Desktop Navigation Links */}
